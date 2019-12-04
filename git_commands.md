@@ -129,3 +129,16 @@
 
  ## ==== List of Globally Installed Packages ============
  **npm list -g --depth 0**
+
+## ==== Updating Global Packages ========================
+To update global packages, you can use:
+
+**npm install -g** *nodemon*
+
+To find out which packages need to be updated, you can use *npm outdated -g --depth=0*.
+
+To update all global packages, you can use ***npm update -g***
+
+To force update to another major version use npm package command:
+
+**npm update -g** *nodemon@latest*

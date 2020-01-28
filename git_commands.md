@@ -141,4 +141,4 @@ To update all global packages, you can use ***npm update -g***
 
 To force update to another major version use npm package command:
 
-**npm update -g** *nodemon@latest*
+**npm i -g** *nodemon@latest*

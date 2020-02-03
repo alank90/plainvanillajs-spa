@@ -8,7 +8,7 @@
     "start": "budo index.js --live --open",
     "build": "node ./scripts/build",
     "testbuild": "budo -d ./build --open",
-    "css-clean": "npx postcss src\\css\\main.css --replace && npx postcss src\\css\\main.css --replace --no-map"
+    "css-clean": "npx postcss src/css/*.css autoprefixer -d src/css && npx postcss src/css/*.css --replace --no-map"
   },
   "repository": {
     "type": "git",
@@ -26,18 +26,18 @@
   },
   "homepage": "https://github.com/peterbarraud/rapo-browserify-budo#browserify-with-budo",
   "devDependencies": {
-    "autoprefixer": "^8.1.0",
-    "budo": "^10.0.4",
-    "copy-dir": "^0.3.0",
-    "css-declaration-sorter": "^3.0.1",
+    "autoprefixer": "^9.7.4",
+    "budo": "^11.6.3",
+    "copy-dir": "^1.2.0",
+    "css-declaration-sorter": "^5.0.0",
     "file-copy": "^1.0.0",
-    "imagemin": "^5.3.1",
-    "imagemin-gifsicle": "^5.2.0",
-    "imagemin-jpegtran": "^5.0.2",
-    "imagemin-pngquant": "^5.0.1",
-    "mkdirp": "^0.5.1",
-    "rimraf": "^2.6.2",
-    "uglifycss": "0.0.27",
-    "uglifyify": "^4.0.4"
+    "imagemin": "^7.0.1",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "mkdirp": "^1.0.3",
+    "rimraf": "^3.0.1",
+    "uglifycss": "0.0.29",
+    "uglifyify": "^5.0.2"
   }
 }

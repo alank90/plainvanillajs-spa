@@ -1,16 +1,10 @@
-# Browserify with Budo
-Ok so this is the first in a series of git repos that I've created to use as templates for Rapid Prototyping (or rapo) using [Browserify](http://browserify.org) and [Budo](https://github.com/mattdesl/budo).
-
-There's a lot (and I mean a whole lot) of tools out there for Rapid Prototyping (again Rapo) that give you this functionality but I think these two (Browserify and Budo) really put the Rapid into Rapid Prototyping - IMHO.
-
-Also, most projects that I look at talk about Webpack, Gulp, Grunt and the like. I think these are more than just Rapo. They require a good deal more to get started. The rapo projects I'm putting together, require a super small amount of configuration and stuff.
+# vanillajs-spa
+This projects shows how one can make a simple blog (list > details) style single page app using only plain javascript.
+No frameworks or build tools are needed to run this.
+But one will need a web server to serve the html and the js to the browser.uff.
 
 ## What's in this project
 This is a barebones Browserify and Budo project. The idea is the build all other projects using this as the basic setup.
-
-The only JavaScript for web library I've used is - which I've used because I want to not use `jQuery` or any such other library to check if the DOM is ready at the start.
-
-*Don't get me wrong. I have quite enjoyed using `jQuery` over the years. It has contributed to where the web is at more than maybe any other single JavaScript library. But it's probably done it time.*
 
 ### index.js
 This will be used by budo to start up things.

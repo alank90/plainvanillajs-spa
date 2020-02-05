@@ -5,43 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Rapid Prototyping with Budo & Browserify</title>
-
-    <!-- ============== CSS Files Here =================================== -->
-    <link rel="stylesheet" href="./src/css/main.css" />
+    <title>Vanillajs SPA</title>
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAOwAAADdAAAAxQAAAPYAAABfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADYAAAD+AAAA/wAAAP8AAAD/AAAAcQAAAAAAAABEAAAAjQAAAE8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcAAADMAAAA/wAAAP8AAAD/AAAA/wAAAOwAAACfAAAA/gAAAOUAAAD+AAAASwAAAAAAAAAAAAAAAAAAAAAAAABhAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA9QAAAHIAAAADAAAA0AAAAKIAAAAAAAAAAAAAAAAAAAAAAAAAkgAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAM0AAAAAAAAAAAAAAJMAAACUAAAAAAAAAAAAAAAPAAAABgAAAHQAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAACwAAAAAQAAABUAAAABAAAAAQAAAAAAAAAAAAAAKQAAAFkAAACrAAAA/wAAAP8HBgX/Dw4O/wAAAP8AAAD/AAAA0QAAAF4AAAA7AAAAAAAAAAAAAAAAAAAAAAAAABMAAAB1AAAA/xwoKv8fLC//FBMT/yUkI/8RGRr/Kjo+/wAAAP8AAAClAAAAHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs4a8yv//////8////1t/iP8aJCb////////////S////AAAA7QAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM+h4vH//////3alsf8SGRv/AAAA/2+cp//1////5f///wAAAP8AAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACoAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeQAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAtQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHmCh87/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/Wl6P/zk7WrQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB5tb3//wAAAP8AAAD7AAAA0gAAANYAAADvAAAA/4iN1/8+QGK0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeTU3VP8AAADgAAAAPAAAAAAAAAAAAAAAHgAAAMITEx7/LC1GtAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGwAAACuAAAAEgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAgwAAAKQAAAAAAAAAAAAAAAAAAAAA8D8AAPABAADgAQAA4AEAAOAZAACAAQAAgAMAAIADAADABwAAwAcAAMAHAADADwAAwA8AAMAPAADDDwAAx48AAA=="
+        rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <script type="module" src="/index.js"></script>
 </head>
 
 <body>
-    <h1>JavaScript for Web Designers</h1>
+    <div id="header_container"></div>
 
-    <div class="container">
-        <img src="./src/img/lorem_ipsum.jpg" alt="image of some ipsum lorem">
-
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident qui eaque vitae, accusantium exercitationem doloremque
-            dolorem molestias, velit aliquid maiores fugit adipisci. Officia eligendi quos odit doloribus voluptates omnis
-            quas quisquam ullam, placeat laborum? Accusamus, deserunt fugiat nostrum odit ipsa, delectus voluptatem, tempore
-            debitis nemo mollitia hic. Architecto aliquam temporibus itaque distinctio sunt nihil dolores iusto, magnam suscipit
-            ad animi!</p>
-        <p>Fuga ex odio atque quo tenetur, sed dicta doloremque fugit earum eveniet, id maiores repellendus vel ab qui aut,
-            perspiciatis eius esse cupiditate deleniti. Ipsa saepe fugit cupiditate, accusamus distinctio, deserunt officia
-            natus cumque officiis quisquam iusto ab quos. Quam veritatis architecto quidem temporibus voluptates nesciunt
-            illo accusamus? Cum quos beatae nisi quia, nihil tempora doloribus consequuntur! Modi, aut temporibus.</p>
-        <p>Eligendi, beatae, fuga officiis accusantium iure repellendus numquam culpa cumque itaque eius quaerat? Sint natus
-            maxime consectetur quos earum enim rem, voluptatibus atque error cumque unde recusandae, deleniti neque! Commodi
-            tempora expedita atque quis, repudiandae, corporis rerum illo rem modi sit enim obcaecati. Laboriosam temporibus,
-            expedita recusandae a, maxime officiis illo distinctio ipsum rem, consequuntur earum alias sed sequi enim.</p>
-        <p>Est ad voluptas mollitia placeat provident adipisci hic, neque a tempore! Maiores eius amet consectetur, harum mollitia,
-            similique voluptates animi earum quidem aperiam voluptas quo omnis voluptatum magnam explicabo alias. Dicta aliquid
-            nemo est ab a sed voluptas nobis recusandae veniam! Ad reiciendis repellendus, optio ab voluptas ullam hic inventore
-            sint laboriosam temporibus sed voluptatem, repellat dolorum fuga iste accusamus!</p>
+    <div id="page_container" class="container pageEntry">
+        <article>Loading ...</article>
     </div>
 
-
-    <!-- ===================== JavaScript Files Below This Line =============== -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <div id="footer_container"></div>
 </body>
 
 </html>

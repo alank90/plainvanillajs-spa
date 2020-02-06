@@ -2,6 +2,15 @@
 
 /* jshint esversion:9 */
 
+const Home = require("../resources/views/pages/Home");
+const About = require("../resources/views/pages/About");
+const Error404 = require("../resources/views/pages/Error404");
+const PostShow = require("../resources/views/pages/PostShow");
+const Register = require("../resources/views/pages/Register");
+
+const Navbar = require("../resources/views/components/Navbar");
+const Bottombar = require("../resources/views/components/Bottombar");
+
 const Utils = require("../resources/services/Utils");
 
 // List of supported routes. Any url other than these will throw a 404 error

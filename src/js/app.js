@@ -26,7 +26,7 @@ const router = async () => {
   //Lazy Load view element:
   const header = null || document.getElementById("header_container");
   const content = null || document.getElementById("page_container");
-  const footer = null || document.getElementById("footer.container");
+  const footer = null || document.getElementById("footer_container");
 
   // Render the Header and footer of the page
   header.innerHTML = await Navbar.render();
@@ -36,7 +36,7 @@ const router = async () => {
 
   // Get the parsed URL from the addressbar
   let request = Utils.parseRequestURL();
-  console.log(request);
+  //console.log(request);
 
   // Parse the URL and if it has an id part, change it with the string ":id"
   let parsedURL =
@@ -49,7 +49,7 @@ const router = async () => {
   let page = routes[parsedURL] ? routes[parsedURL] : Error404;
   content.innerHTML = await page.render();
   await page.after_render();
-}; //end router function
+}; // ======= End router function ==========================
 
 // Listen on hash change:
 window.addEventListener("hashchange", router);

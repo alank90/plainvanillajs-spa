@@ -12,7 +12,7 @@ let getPost = async id => {
 
   try {
     const response = await fetch(
-      `https://5bb634f6695f8d001496c082.mockapi.io/api/posts/` + id,
+      `https://5e42dfa7f6128600148adb8a.mockapi.io/api/posts/` + id,
       options
     );
     const json = await response.json();

@@ -14,7 +14,7 @@ let getPostsList = async () => {
 
   try {
     const response = await fetch(
-      `https://5bb634f6695f8d001496c082.mockapi.io/api/posts`,
+      `https://5e42dfa7f6128600148adb8a.mockapi.io/api/posts/`,
       options
     );
     const json = await response.json();
@@ -52,7 +52,9 @@ let Home = {
 
     return view;
   },
-  after_render: async () => {}
+  after_render: async () => {
+    // Code for page events (i.e. button clicks) goes here if necessary
+  }
 };
 
 module.exports = Home;

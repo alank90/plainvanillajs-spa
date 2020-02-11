@@ -7,7 +7,8 @@ const Utils = {
   // =========================================================
 
   parseRequestURL: () => {
-    let url = location.hash.slice(1).toLocaleLowerCase() || "/"; // returns hash portion of url sans the #
+    let url = location.hash.slice(1).toLowerCase() || "/"; // returns hash portion of url sans the #
+    
     let r = url.split("/"); // Divide hash into component parts as an array
     let request = {
       resource: null,

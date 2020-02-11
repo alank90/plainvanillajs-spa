@@ -3,18 +3,8 @@ html {
 }
 
 body {
-    background-color: rgba(176, 227, 243, 0.555);
     cursor: default;
     font-size: 62.5%;
-}
-
-h1, h2{
-    text-align: center;
-}
-
-.container {
-    text-align: center;
-    font-size: 24px;
 }
 
 img {
@@ -23,18 +13,4 @@ img {
     max-width: 300px;
 }   
 
-p {
-    font-size: 22px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: left; 
-}
 
-.more-link {
-    display: inline-block;
-    margin-left: 10px;
-}
-
-.less-link {
-    display: inline-block;
-    margin-left: 10px;
-}

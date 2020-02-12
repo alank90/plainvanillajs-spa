@@ -19,16 +19,19 @@ let getPostsList = async () => {
     );
     const json = await response.json();
 
-    console.log(json);
     return json;
   } catch (err) {
-    console.log("Error getting documents. Is School Firewall blocking .io domain?", err);
+    console.log(
+      "Error getting documents. Is School Firewall blocking .io domain?",
+      err
+    );
   }
 };
 
 let Home = {
   render: async () => {
     let posts = await getPostsList();
+
     let view =
       /*html*/
       `
@@ -39,12 +42,11 @@ let Home = {
                       .map(
                         post =>
                           /*html*/
-
-                          `
-                            <li><a href="#/p/${post.id}"> ${post.title} </a></li>
-                        `
+                          `<li><a href="#/p/${post.id}"> ${post.title} </a></li>`
                       )
-                      .join("\n")}
+                      .join("\n")
+                    }
+                  
                 </ul>
         </section>
 

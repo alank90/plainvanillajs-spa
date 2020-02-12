@@ -16,8 +16,7 @@ let getPost = async id => {
       options
     );
     const json = await response.json();
-    console.log(json);
-
+    
     return json;
   } catch (err) {
     console.log(" Error getting documents", err);
@@ -31,6 +30,7 @@ let PostShow = {
 
     return /*html*/ `
                 <section class="section">
+                    <img src=${post.avatar}>
                     <h1> Post Id : ${post.id} </h1>
                     <p> Post Titile : ${post.id} </p>
                     <p> Post Content : ${post.content} </p>

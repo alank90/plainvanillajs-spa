@@ -8,9 +8,9 @@ body {
 }
 
 img {
-    width: 100%;
     height: auto;
     max-width: 300px;
+    width: 100%;
 }   
 
 
